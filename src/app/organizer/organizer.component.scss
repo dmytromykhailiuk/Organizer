@@ -1,0 +1,58 @@
+.organizer__wraper {
+  width: 733px;
+  margin: -3px auto;
+}
+
+.task {
+  padding: 7px 29px;
+  font-size: 20px;
+  background-color: #151515;
+  border: 2px solid #000;
+}
+
+ul {
+  list-style: none;
+  li {
+    position: relative;
+    span {
+      position: absolute;
+      right: 15px;
+    }
+    span:hover {
+      color: rgb(143, 70, 36);
+      cursor: pointer;
+    }
+  }
+}
+
+form > input {
+  border: 2px solid #000;
+  display: block;
+  width: 91.4%;
+  margin: auto;
+  background-color: #151515;
+  padding: 6px 4%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(128, 128, 128, 0.363);
+}
+
+button {
+  width: 240px;
+  display: block;
+  padding: 10px;
+  color: rgb(143, 70, 36);
+  font-size: 30px;
+  font-weight: 500;
+  margin: auto;
+  cursor: pointer;
+}
+
+.no__tasks--message {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}

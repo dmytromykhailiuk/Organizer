@@ -1,0 +1,21 @@
+<div class="organizer__wraper">
+
+  <ul *ngIf="tasks.length" >
+    <li class="task" *ngFor="let task of tasks">
+      {{ task.title }}
+      <span class="material-icons"
+        (click)="removeTask(task)"
+      >delete</span>
+    </li>
+  </ul>
+
+  <div class="no__tasks--message" *ngIf="!tasks.length">
+    No tasks yet...
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <input placeholder="Write new note here..." type="text" formControlName="text">
+    <button type="submit" [disabled]="form.invalid">Add new note</button>
+  </form>
+
+</div>

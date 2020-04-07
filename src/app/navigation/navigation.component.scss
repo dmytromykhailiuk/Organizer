@@ -1,0 +1,23 @@
+.header__wraper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+p {
+  text-align: center;
+  width: 220px;
+}
+
+i {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+i:hover {
+  color: rgb(143, 70, 36);
+}
